@@ -1,0 +1,51 @@
+{
+  "name": "phonemic-transcriber",
+  "version": "0.0.1",
+  "description": "A simple phonemic transcriber for the american english language.",
+  "main": "js/phonemic-transcriber.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "keywords": [
+    "transcription",
+    "phonological",
+    "orthography",
+    "transcriber",
+    "transcribe",
+    "dictionary",
+    "character",
+    "phonology",
+    "allophone",
+    "phonetics",
+    "phonemics",
+    "phonetic",
+    "phonemic",
+    "alphabet",
+    "language",
+    "writing",
+    "phoneme",
+    "cmu",
+    "javascript",
+    "html5"
+  ],
+  "author": {
+    "name": "Armotus"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/armotus/phonemic-transcription.git"
+  },
+  "bugs": {
+    "url": "https://github.com/armotus/phonemic-transcription/issues"
+  },
+  "homepage": "https://github.com/armotus/phonemic-transcription#readme",
+  "devDependencies": {
+    "chai": "^4.5.0",
+    "mocha": "^11.1.0"
+  }
+}

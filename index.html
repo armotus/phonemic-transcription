@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Armotus">
+	<meta name="robots" content="index, follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="fav/favicon.svg">
+	<title>Phonemic Transcription</title>
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="main">
+	<div id="top"></div>
+	<h1 style="cursor:pointer" id="Title" onclick="myTheme();">PHONEMIC TRANSCRIPTION</h1>
+	<p>A simple phonemic transcriber for the american english language.</p>
+	<input type="checkbox" id="myAPA" onclick="myfunMAPA();" checked><span>MAPA</span>&nbsp; ||&nbsp; <input type="checkbox" id="myBox1" onclick="myFunction3();" checked><span style="display:inline">syllable</span>&nbsp; <input type="checkbox" id="myBox2" onclick="myFunction1();"><span style="display:inline">a:á</span>&nbsp; <input type="checkbox" id="myBox3" onclick="myFunction2();"><span style="display:inline">a:ä</span>&nbsp; <input type="checkbox" id="myBox4" onclick="myFunction4();"><span style="display:inline">z:Z</span>&nbsp; <input type="checkbox" id="myBox5" onclick="myFunction5();"><span style="display:inline">az {az}</span>
+	<p></p>
+	<form><textarea id="myInput" rows="12" cols="90" spellcheck="false" placeholder="Enter some text here and click the 'Run' button" onmouseup="mySize();"></textarea></form>
+	<br>
+	<button onclick="myChange();">Run</button><span class="spanBreak1">&nbsp;</span><button onclick="myClear();">Clear</button><span class="spanBreak2">&nbsp;</span><button onclick="myAaTex();">AZ:az</button>
+	<br><br>
+	<form><textarea id="myResult" rows="12" cols="90" spellcheck="false" placeholder="Display in dark or light mode : click on the 'Title'" onmouseup="mySize();"></textarea></form>
+	<br>
+	<button onclick="mySave();">Save</button><span class="spanBreak1">&nbsp;</span><button id="myCopy" onclick="myCopy();">Copy</button><span class="spanBreak2">&nbsp;</span><button onclick="myModeT();">Areas</button>
+	<br class="dobleBr">
+	<p><a id="fonemas"></a></p>
+	<h2>PHONEMES</h2>
+	<p>A0 &#8226; Carnegie Mellon University (&nbsp;<a href="https://en.wikipedia.org/wiki/CMU_Pronouncing_Dictionary">CMU</a>&nbsp;)</p>
+	<p>|&nbsp; AH , EH , IH , UH , AE , AH0 &nbsp;|&nbsp; AA , ER , IY , AO , UW , ER0 &nbsp;|&nbsp; AY , EY , OY , AW , OW &nbsp;|&nbsp; Stress : 0 , 1 , 2 &nbsp;|</p>
+	<p>|&nbsp; B , CH , D , F , G , HH , K , L , M , N , P , R , S , T , V , W , Y , Z &nbsp;|&nbsp; DH , JH , NG , SH , TH , ZH &nbsp;|</p>
+	<p>A1 &#8226; American Phonetic Alphabet (&nbsp;<a href="https://armotus.github.io/phonemic-transcription">APA</a>&nbsp;)</p>
+	<p>|&nbsp; ah , eh , ih , uh , aq , oq &nbsp;|&nbsp; ax , ex , ix , ox , ux , qx &nbsp;|&nbsp; ai , ei , oi , au , ou &nbsp;|&nbsp; Stress : a , á , ä &nbsp;|</p>
+	<p>|&nbsp; b , c , d , f , g , j , k , l , m , n , p , r , s , t , v , w , y , z &nbsp;|&nbsp; dh , jh , nh , sh , th , zh &nbsp;|</p>
+	<p>A2 &#8226; Modified American Phonetic Alphabet (&nbsp;<a href="https://armotus.github.io/phonemic-transcription">MAPA</a>&nbsp;)</p>
+	<p>|&nbsp; a , e , i , u , ae , &#601; &nbsp;|&nbsp; aa , ee , ii , oo , uu , &#601;&#601; &nbsp;|&nbsp; ai , ei , oi , au , ou &nbsp;|&nbsp; Stress : a , á , ä &nbsp;|</p>
+	<p>|&nbsp; b , ch , d , f , g , h , k , l , m , n , p , r , s , t , v , w , y , z &nbsp;|&nbsp; dh , j , ng , sh , th , zh &nbsp;|</p>
+	<p>A3 &#8226; International Phonetic Alphabet (&nbsp;<a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet">IPA</a>&nbsp;)</p>
+	<p>|&nbsp; &#652; , &#603; , &#618; , &#650; , &#230; , &#601; &nbsp;|&nbsp; &#593;&#720; , &#605; , &#105;&#720; , &#596;&#720; , &#117;&#720; , &#602; &nbsp;|&nbsp; a&#618; , e&#618; , &#596;&#618; , a&#650; , o&#650; &nbsp;|&nbsp; Stress : . , &#712; , &#716; &nbsp;|</p>
+	<p>|&nbsp; b , &#116;&#865;&#643; , d , f , g , h , k , l , m , n , p , r , s , t , v , w , j , z &nbsp;|&nbsp; &#240; , &#100;&#865;&#658; , &#331; , &#643; , &#952; , &#658; &nbsp;|</p>
+	<p>E1 &#8226; English Phonetic Alphabet (&nbsp;<a href="https://armotus.github.io/phonemic-transcription">EPA</a>&nbsp;)</p>
+	<p>|&nbsp; ah , eh , ih , oh , uh , aq , oq &nbsp;|&nbsp; ax , ex , ix , ox , ux &nbsp;|&nbsp; eq , iq , uq , ai , ei , oi , au , ou &nbsp;|&nbsp; Stress : a , á , ä &nbsp;|</p>
+	<p>|&nbsp; b , c , d , f , g , j , k , l , m , n , p , r , s , t , v , w , y , z &nbsp;|&nbsp; dh , jh , nh , sh , th , zh &nbsp;|</p>
+	<p>E2 &#8226; Modified English Phonetic Alphabet (&nbsp;<a href="https://armotus.github.io/phonemic-transcription">MEPA</a>&nbsp;)</p>
+	<p>|&nbsp; a , e , i , o , u , ae , &#601; &nbsp;|&nbsp; aa , ee , ii , oo , uu &nbsp;|&nbsp; e&#601; , i&#601; , u&#601; , ai , ei , oi , au , ou &nbsp;|&nbsp; Stress : a , á , ä &nbsp;|</p>
+	<p>|&nbsp; b , ch , d , f , g , h , k , l , m , n , p , r , s , t , v , w , y , z &nbsp;|&nbsp; dh , j , ng , sh , th , zh &nbsp;|</p>
+	<p>E3 &#8226; International Phonetic Alphabet (&nbsp;<a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet">IPA</a>&nbsp;)</p>
+	<p>|&nbsp; &#652; , &#603; , &#618; , &#594; , &#650; , &#230; , &#601; &nbsp;|&nbsp; &#593;&#720; , &#604;&#720; , &#105;&#720; , &#596;&#720; , &#117;&#720; &nbsp;|&nbsp; &#603;&#601; , &#618;&#601; , &#650;&#601; , a&#618; , e&#618; , &#596;&#618; , a&#650; , &#601;&#650; &nbsp;|&nbsp; Stress : . , &#712; , &#716; &nbsp;|</p>
+	<p>|&nbsp; b , &#116;&#865;&#643; , d , f , g , h , k , l , m , n , p , r , s , t , v , w , j , z &nbsp;|&nbsp; &#240; , &#100;&#865;&#658; , &#331; , &#643; , &#952; , &#658; &nbsp;|</p>
+	<p><a id="philosophy"></a></p>
+	<h2>PHILOSOPHY</h2>
+	<p>&#8226; Traditional Transcription (&nbsp;Characters&nbsp;) &nbsp;&rArr;&nbsp; Traditional Orthography &nbsp;&rArr;&nbsp; Traditional Writing (&nbsp;1st&nbsp;)</p>
+	<p>&#8226; Phonetic Transcription (&nbsp;Allophones&nbsp;) &nbsp;&rArr;&nbsp; Phonetic Orthography &nbsp;&rArr;&nbsp; Phonetic Writing (&nbsp;2nd&nbsp;)</p>
+	<p>&#8226; Phonemic Transcription (&nbsp;Phonemes&nbsp;) &nbsp;&rArr;&nbsp; Phonemic Orthography &nbsp;&rArr;&nbsp; Phonemic Writing (&nbsp;3rd&nbsp;)</p>
+	<a id="bibliography"></a>
+	<h2>BIBLIOGRAPHY</h2>
+	<p>&#8226; ARPABET : Advanced Research Projects Agency (&nbsp;<a href="https://en.wikipedia.org/wiki/ARPABET">Link</a>&nbsp;)</p>
+	<p>&#8226; CMU : The CMU Pronouncing Dictionary (&nbsp;<a href="https://en.wikipedia.org/wiki/CMU_Pronouncing_Dictionary">Link</a>&nbsp;)</p>
+	<p>&#8226; IPA : International Phonetic Alphabet (&nbsp;<a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet">Link</a>&nbsp;)</p>
+	<p>&#8226; GEMINI : Google's AI Assistant (&nbsp;<a href="https://en.wikipedia.org/wiki/Gemini_(chatbot)">Link</a>&nbsp;)</p>
+	<p>&#8226; URL : Phonemic Orthography (&nbsp;<a href="https://en.wikipedia.org/wiki/Phonemic_orthography">Link</a>&nbsp;)</p>
+	<p>&#8226; URL : Alphabetic Principle (&nbsp;<a href="https://en.wikipedia.org/wiki/Alphabetic_principle">Link</a>&nbsp;)</p>
+	<h2>PROJECT</h2>
+	<p>&#8226; <a href="https://github.com/armotus/phonemic-transcription">HOME</a></p>
+	<h2>LICENSE</h2>
+	<p>&#8226; <a href="abc/abc.html">ABC</a></p>
+	</div>
+	<script src="js/panels.js"></script>
+	<script src="js/dictionary.js"></script>
+	<script src="js/transcriber.js"></script>
+</body>
+</html>
