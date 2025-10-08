@@ -16,13 +16,13 @@ A0 &#8226; Carnegie Mellon University (&nbsp;<a href="https://en.wikipedia.org/w
 
 |&nbsp; B , CH , D , F , G , HH , K , L , M , N , P , R , S , T , V , W , Y , Z &nbsp;|&nbsp; DH , JH , NG , SH , TH , ZH &nbsp;|
 
-A1 &#8226; American Phonetic Alphabet (&nbsp;<a href="https://armotus.github.io/phonemic-transcription">APA</a>&nbsp;)
+A1 &#8226; American Phonetic Alphabet (&nbsp;<a href="https://github.com/armotus/phonemic-transcription">APA</a>&nbsp;)
 
 |&nbsp; ah , eh , ih , uh , aq , oq &nbsp;|&nbsp; ax , ex , ix , ox , ux , qx &nbsp;|&nbsp; ai , ei , oi , au , ou &nbsp;|&nbsp; Stress : a , á , ä &nbsp;|
 
 |&nbsp; b , c , d , f , g , j , k , l , m , n , p , r , s , t , v , w , y , z &nbsp;|&nbsp; dh , jh , nh , sh , th , zh &nbsp;|
 
-A2 &#8226; Modified American Phonetic Alphabet (&nbsp;<a href="https://armotus.github.io/phonemic-transcription">MAPA</a>&nbsp;)
+A2 &#8226; Modified American Phonetic Alphabet (&nbsp;<a href="https://github.com/armotus/phonemic-transcription">MAPA</a>&nbsp;)
 
 |&nbsp; a , e , i , u , ae , &#601; &nbsp;|&nbsp; aa , ee , ii , oo , uu , &#601;&#601; &nbsp;|&nbsp; ai , ei , oi , au , ou &nbsp;|&nbsp; Stress : a , á , ä &nbsp;|
 
@@ -30,17 +30,17 @@ A2 &#8226; Modified American Phonetic Alphabet (&nbsp;<a href="https://armotus.g
 
 A3 &#8226; International Phonetic Alphabet (&nbsp;<a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet">IPA</a>&nbsp;)
 
-|&nbsp; &#652; , &#603; , &#618; , &#650; , &#230; , &#601; &nbsp;|&nbsp; &#593;&#720; , &#605; , &#105;&#720; , &#596;&#720; , &#117;&#720; , &#602; &nbsp;|&nbsp; a&#618; , e&#618; , &#596;&#618; , a&#650; , o&#650; &nbsp;|&nbsp; Stress : . , &#712; , &#716; &nbsp;|
+|&nbsp; &#652; , &#603; , &#618; , &#650; , &#230; , &#601; &nbsp;|&nbsp; &#593;&#720; , &#605;&#720; , &#105;&#720; , &#596;&#720; , &#117;&#720; , &#602; &nbsp;|&nbsp; a&#618; , e&#618; , &#596;&#618; , a&#650; , o&#650; &nbsp;|&nbsp; Stress : . , &#712; , &#716; &nbsp;|
 
 |&nbsp; b , &#116;&#865;&#643; , d , f , g , h , k , l , m , n , p , r , s , t , v , w , j , z &nbsp;|&nbsp; &#240; , &#100;&#865;&#658; , &#331; , &#643; , &#952; , &#658; &nbsp;|
 
-E1 &#8226; English Phonetic Alphabet (&nbsp;<a href="https://armotus.github.io/phonemic-transcription">EPA</a>&nbsp;)
+E1 &#8226; English Phonetic Alphabet (&nbsp;<a href="https://github.com/armotus/phonemic-transcription">EPA</a>&nbsp;)
 
 |&nbsp; ah , eh , ih , oh , uh , aq , oq &nbsp;|&nbsp; ax , ex , ix , ox , ux &nbsp;|&nbsp; eq , iq , uq , ai , ei , oi , au , ou &nbsp;|&nbsp; Stress : a , á , ä &nbsp;|
 
 |&nbsp; b , c , d , f , g , j , k , l , m , n , p , r , s , t , v , w , y , z &nbsp;|&nbsp; dh , jh , nh , sh , th , zh &nbsp;|
 
-E2 &#8226; Modified English Phonetic Alphabet (&nbsp;<a href="https://armotus.github.io/phonemic-transcription">MEPA</a>&nbsp;)
+E2 &#8226; Modified English Phonetic Alphabet (&nbsp;<a href="https://github.com/armotus/phonemic-transcription">MEPA</a>&nbsp;)
 
 |&nbsp; a , e , i , o , u , ae , &#601; &nbsp;|&nbsp; aa , ee , ii , oo , uu &nbsp;|&nbsp; e&#601; , i&#601; , u&#601; , ai , ei , oi , au , ou &nbsp;|&nbsp; Stress : a , á , ä &nbsp;|
 
