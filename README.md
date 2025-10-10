@@ -48,7 +48,7 @@ E2 &#8226; Modified English Phonetic Alphabet (&nbsp;<a href="https://github.com
 
 E3 &#8226; International Phonetic Alphabet (&nbsp;<a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet">IPA</a>&nbsp;)
 
-|&nbsp; &#652; , &#603; , &#618; , &#594; , &#650; , &#230; , &#601; &nbsp;|&nbsp; &#593;&#720; , &#604;&#720; , &#105;&#720; , &#596;&#720; , &#117;&#720; &nbsp;|&nbsp; &#603;&#601; , &#618;&#601; , &#650;&#601; , a&#618; , e&#618; , &#596;&#618; , a&#650; , &#601;&#650; &nbsp;|&nbsp; Stress : . , &#712; , &#716; &nbsp;|
+|&nbsp; &#652; , e , &#618; , &#594; , &#650; , &#230; , &#601; &nbsp;|&nbsp; &#593;&#720; , &#604;&#720; , &#105;&#720; , &#596;&#720; , &#117;&#720; &nbsp;|&nbsp; e&#601; , &#618;&#601; , &#650;&#601; , a&#618; , e&#618; , &#596;&#618; , a&#650; , &#601;&#650; &nbsp;|&nbsp; Stress : . , &#712; , &#716; &nbsp;|
 
 |&nbsp; b , &#116;&#865;&#643; , d , f , g , h , k , l , m , n , p , r , s , t , v , w , j , z &nbsp;|&nbsp; &#240; , &#100;&#865;&#658; , &#331; , &#643; , &#952; , &#658; &nbsp;|
 
