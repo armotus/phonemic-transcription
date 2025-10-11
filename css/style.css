@@ -87,6 +87,11 @@ a {
 	background-color: #ffffff;
 }
 
+.inblo {
+	margin-top: 0.36em;
+	display: inline-block;
+}
+
 @media (max-width: 357px) {
 	.spanBreak2 {
 		display: block;

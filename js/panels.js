@@ -249,8 +249,8 @@ function myResponsive() {
 	// FONT-SIZE H1 & H2
 	let valueHfs = myCalculation( widthMain, 200, 600, 24, 36 ) ;
 	let widthH1 = myCalculation( widthMain, 120, 230, 0.60, 1 ) ;
-	if ( widthMain < 136 ) { document.getElementById("Title").innerHTML = "PHONEMIC TRANSCR."; };
-	if ( widthMain >= 136 ) { document.getElementById("Title").innerHTML = "PHONEMIC TRANSCRIPTION"; };
+	if ( widthMain < 174 ) { document.getElementById("Title").innerHTML = "PHONEMIC TRANSCR."; };
+	if ( widthMain >= 174 ) { document.getElementById("Title").innerHTML = "PHONEMIC TRANSCRIPTION"; };
 	document.getElementsByTagName("h1")[0].style.fontSize = valueHfs * widthH1 + "px" ;
 	let i = 0;
 	while ( i < 5 ) {

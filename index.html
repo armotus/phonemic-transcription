@@ -18,7 +18,7 @@
 	<div id="top"></div>
 	<h1 style="cursor:pointer" id="Title" onclick="myTheme();">PHONEMIC TRANSCRIPTION</h1>
 	<p>A simple phonemic transcriber for the american english language.</p>
-	<input type="checkbox" id="myAPA" onclick="myfunMAPA();" checked><span>MAPA</span>&nbsp; ||&nbsp; <input type="checkbox" id="myBox1" onclick="myFunction3();" checked><span style="display:inline">syllable</span>&nbsp; <input type="checkbox" id="myBox2" onclick="myFunction1();"><span style="display:inline">a:á</span>&nbsp; <input type="checkbox" id="myBox3" onclick="myFunction2();"><span style="display:inline">a:ä</span>&nbsp; <input type="checkbox" id="myBox4" onclick="myFunction4();"><span style="display:inline">z:Z</span>&nbsp; <input type="checkbox" id="myBox5" onclick="myFunction5();"><span style="display:inline">az {az}</span>
+	<div class="inblo"><input type="checkbox" id="myAPA" onclick="myfunMAPA();" checked><span>MAPA</span></div>&nbsp; ||&nbsp; <div class="inblo"><input type="checkbox" id="myBox1" onclick="myFunction3();" checked><span style="display:inline">syllable</span></div>&nbsp; <div class="inblo"><input type="checkbox" id="myBox2" onclick="myFunction1();"><span style="display:inline">a:á</span></div>&nbsp; <div class="inblo"><input type="checkbox" id="myBox3" onclick="myFunction2();"><span style="display:inline">a:ä</span></div>&nbsp; <div class="inblo"><input type="checkbox" id="myBox4" onclick="myFunction4();"><span style="display:inline">z:Z</span></div>&nbsp; <div class="inblo"><input type="checkbox" id="myBox5" onclick="myFunction5();"><span style="display:inline">az {az}</span></div>
 	<p></p>
 	<form><textarea id="myInput" rows="12" cols="90" spellcheck="false" placeholder="Enter some text here and click the 'Run' button" onmouseup="mySize();"></textarea></form>
 	<br>
@@ -31,19 +31,19 @@
 	<p><a id="fonemas"></a></p>
 	<h2>PHONEMES</h2>
 	<p>A0 &#8226; Carnegie Mellon University (&nbsp;<a href="https://en.wikipedia.org/wiki/CMU_Pronouncing_Dictionary">CMU</a>&nbsp;)</p>
-	<p>|&nbsp; AH , EH , IH , UH , AE , AH0 &nbsp;|&nbsp; AA , ER , IY , AO , UW , ER0 &nbsp;|&nbsp; AY , EY , OY , AW , OW &nbsp;|&nbsp; Stress : 0 , 1 , 2 &nbsp;|</p>
+	<p>|&nbsp; AH , EH , IH , UH , AE , AH0 , ER0 &nbsp;|&nbsp; AA , ER , IY , AO , UW &nbsp;|&nbsp; AY , EY , OY , AW , OW &nbsp;|&nbsp; Stress : 0 , 1 , 2 &nbsp;|</p>
 	<p>|&nbsp; B , CH , D , F , G , HH , K , L , M , N , P , R , S , T , V , W , Y , Z &nbsp;|&nbsp; DH , JH , NG , SH , TH , ZH &nbsp;|</p>
 	<p>A1 &#8226; American Phonetic Alphabet (&nbsp;<a href="https://github.com/armotus/phonemic-transcription">APA</a>&nbsp;)</p>
-	<p>|&nbsp; ah , eh , ih , uh , aq , oq &nbsp;|&nbsp; ax , ex , ix , ox , ux , qx &nbsp;|&nbsp; ai , ei , oi , au , ou &nbsp;|&nbsp; Stress : a , á , ä &nbsp;|</p>
+	<p>|&nbsp; ah , eh , ih , uh , ax , ox , xq &nbsp;|&nbsp; aq , eq , iq , oq , uq &nbsp;|&nbsp; ai , ei , oi , au , ou &nbsp;|&nbsp; Stress : a , á , ä &nbsp;|</p>
 	<p>|&nbsp; b , c , d , f , g , j , k , l , m , n , p , r , s , t , v , w , y , z &nbsp;|&nbsp; dh , jh , nh , sh , th , zh &nbsp;|</p>
 	<p>A2 &#8226; Modified American Phonetic Alphabet (&nbsp;<a href="https://github.com/armotus/phonemic-transcription">MAPA</a>&nbsp;)</p>
-	<p>|&nbsp; a , e , i , u , ae , &#601; &nbsp;|&nbsp; aa , ee , ii , oo , uu , &#601;&#601; &nbsp;|&nbsp; ai , ei , oi , au , ou &nbsp;|&nbsp; Stress : a , á , ä &nbsp;|</p>
+	<p>|&nbsp; a , e , i , u , ae , &#601; , &#601;&#601; &nbsp;|&nbsp; aa , ee , ii , oo , uu &nbsp;|&nbsp; ai , ei , oi , au , ou &nbsp;|&nbsp; Stress : a , á , ä &nbsp;|</p>
 	<p>|&nbsp; b , ch , d , f , g , h , k , l , m , n , p , r , s , t , v , w , y , z &nbsp;|&nbsp; dh , j , ng , sh , th , zh &nbsp;|</p>
 	<p>A3 &#8226; International Phonetic Alphabet (&nbsp;<a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet">IPA</a>&nbsp;)</p>
-	<p>|&nbsp; &#652; , &#603; , &#618; , &#650; , &#230; , &#601; &nbsp;|&nbsp; &#593;&#720; , &#605;&#720; , &#105;&#720; , &#596;&#720; , &#117;&#720; , &#602; &nbsp;|&nbsp; a&#618; , e&#618; , &#596;&#618; , a&#650; , o&#650; &nbsp;|&nbsp; Stress : . , &#712; , &#716; &nbsp;|</p>
+	<p>|&nbsp; &#652; , &#603; , &#618; , &#650; , &#230; , &#601; , &#602; &nbsp;|&nbsp; &#593;&#720; , &#605;&#720; , &#105;&#720; , &#596;&#720; , &#117;&#720; &nbsp;|&nbsp; a&#618; , e&#618; , &#596;&#618; , a&#650; , o&#650; &nbsp;|&nbsp; Stress : . , &#712; , &#716; &nbsp;|</p>
 	<p>|&nbsp; b , &#116;&#865;&#643; , d , f , g , h , k , l , m , n , p , r , s , t , v , w , j , z &nbsp;|&nbsp; &#240; , &#100;&#865;&#658; , &#331; , &#643; , &#952; , &#658; &nbsp;|</p>
 	<p>E1 &#8226; English Phonetic Alphabet (&nbsp;<a href="https://github.com/armotus/phonemic-transcription">EPA</a>&nbsp;)</p>
-	<p>|&nbsp; ah , eh , ih , oh , uh , aq , oq &nbsp;|&nbsp; ax , ex , ix , ox , ux &nbsp;|&nbsp; eq , iq , uq , ai , ei , oi , au , ou &nbsp;|&nbsp; Stress : a , á , ä &nbsp;|</p>
+	<p>|&nbsp; ah , eh , ih , oh , uh , ax , ox &nbsp;|&nbsp; aq , eq , iq , oq , uq &nbsp;|&nbsp; ex , ix , ux , ai , ei , oi , au , ou &nbsp;|&nbsp; Stress : a , á , ä &nbsp;|</p>
 	<p>|&nbsp; b , c , d , f , g , j , k , l , m , n , p , r , s , t , v , w , y , z &nbsp;|&nbsp; dh , jh , nh , sh , th , zh &nbsp;|</p>
 	<p>E2 &#8226; Modified English Phonetic Alphabet (&nbsp;<a href="https://github.com/armotus/phonemic-transcription">MEPA</a>&nbsp;)</p>
 	<p>|&nbsp; a , e , i , o , u , ae , &#601; &nbsp;|&nbsp; aa , ee , ii , oo , uu &nbsp;|&nbsp; e&#601; , i&#601; , u&#601; , ai , ei , oi , au , ou &nbsp;|&nbsp; Stress : a , á , ä &nbsp;|</p>

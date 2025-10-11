@@ -37,32 +37,32 @@ for i in range (len(cmutext)):
 
 	# VOWELS
 
-	apaB = apaB.replace("AA0 ", "çax ç");
+	apaB = apaB.replace("AA0 ", "çaq ç");
 
-	apaB = apaB.replace("AA1 ", "çáx ç"); 
+	apaB = apaB.replace("AA1 ", "çáq ç"); 
 
-	apaB = apaB.replace("AA2 ", "çäx ç");
-
-
-	apaB = apaB.replace("AE0 ", "çaq ç");
-
-	apaB = apaB.replace("AE1 ", "çáq ç");
-
-	apaB = apaB.replace("AE2 ", "çäq ç");
+	apaB = apaB.replace("AA2 ", "çäq ç");
 
 
-	apaB = apaB.replace("AH0 ", "çoq ç");
+	apaB = apaB.replace("AE0 ", "çax ç");
+
+	apaB = apaB.replace("AE1 ", "çáx ç");
+
+	apaB = apaB.replace("AE2 ", "çäx ç");
+
+
+	apaB = apaB.replace("AH0 ", "çox ç");
 
 	apaB = apaB.replace("AH1 ", "çáh ç");
 
 	apaB = apaB.replace("AH2 ", "çäh ç");
 
 
-	apaB = apaB.replace("AO0 ", "çox ç");
+	apaB = apaB.replace("AO0 ", "çoq ç");
 
-	apaB = apaB.replace("AO1 ", "çóx ç");
+	apaB = apaB.replace("AO1 ", "çóq ç");
 
-	apaB = apaB.replace("AO2 ", "çöx ç");
+	apaB = apaB.replace("AO2 ", "çöq ç");
 
 
 	apaB = apaB.replace("AW0 ", "çau ç");
@@ -86,11 +86,11 @@ for i in range (len(cmutext)):
 	apaB = apaB.replace("EH2 ", "çëh ç");
 
 
-	apaB = apaB.replace("ER0 ", "çqx ç");
+	apaB = apaB.replace("ER0 ", "çxq ç");
 
-	apaB = apaB.replace("ER1 ", "çéx ç");
+	apaB = apaB.replace("ER1 ", "çéq ç");
 
-	apaB = apaB.replace("ER2 ", "çëx ç");
+	apaB = apaB.replace("ER2 ", "çëq ç");
 
 
 	apaB = apaB.replace("EY0 ", "çei ç");
@@ -107,11 +107,11 @@ for i in range (len(cmutext)):
 	apaB = apaB.replace("IH2 ", "çïh ç");
 
 
-	apaB = apaB.replace("IY0 ", "çix ç");
+	apaB = apaB.replace("IY0 ", "çiq ç");
 
-	apaB = apaB.replace("IY1 ", "çíx ç");
+	apaB = apaB.replace("IY1 ", "çíq ç");
 
-	apaB = apaB.replace("IY2 ", "çïx ç");
+	apaB = apaB.replace("IY2 ", "çïq ç");
 
 
 	apaB = apaB.replace("OW0 ", "çou ç");
@@ -135,11 +135,11 @@ for i in range (len(cmutext)):
 	apaB = apaB.replace("UH2 ", "çüh ç");
 
 
-	apaB = apaB.replace("UW0 ", "çux ç");
+	apaB = apaB.replace("UW0 ", "çuq ç");
 
-	apaB = apaB.replace("UW1 ", "çúx ç");
+	apaB = apaB.replace("UW1 ", "çúq ç");
 
-	apaB = apaB.replace("UW2 ", "çüx ç");
+	apaB = apaB.replace("UW2 ", "çüq ç");
 
 	# CONSONANTS
 

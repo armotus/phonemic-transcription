@@ -50,12 +50,12 @@ function Transcribe(text,syllable,stress1,stress2,lowerca,fusion) {
 			textsyllable = textsyllable.replace(/ah/g,"a").replace(/eh/g,"e").replace(/ih/g,"i").replace(/uh/g,"u");
 			textsyllable = textsyllable.replace(/áh/g,"á").replace(/éh/g,"é").replace(/íh/g,"í").replace(/úh/g,"ú");
 			textsyllable = textsyllable.replace(/äh/g,"ä").replace(/ëh/g,"ë").replace(/ïh/g,"ï").replace(/üh/g,"ü");
-			textsyllable = textsyllable.replace(/oq/g,"ə"); // INPUT "Q" KEY ( KEYBOARD ) =  OUTPUT LETTER "SCHWA" ( SCREEN )
-			textsyllable = textsyllable.replace(/aq/g,"ae").replace(/áq/g,"áé").replace(/äq/g,"äë"); // INPUT "X" KEY ( KEYBOARD ) =  OUTPUT LETTER "AE" ( SCREEN )
-			textsyllable = textsyllable.replace(/ax/g,"aa").replace(/ex/g,"ee").replace(/ix/g,"ii").replace(/ox/g,"oo").replace(/ux/g,"uu");
-			textsyllable = textsyllable.replace(/áx/g,"áá").replace(/éx/g,"éé").replace(/íx/g,"íí").replace(/óx/g,"óó").replace(/úx/g,"úú");
-			textsyllable = textsyllable.replace(/äx/g,"ää").replace(/ëx/g,"ëë").replace(/ïx/g,"ïï").replace(/öx/g,"öö").replace(/üx/g,"üü");
-			textsyllable = textsyllable.replace(/qx/g,"əə");
+			textsyllable = textsyllable.replace(/ox/g,"ə"); // INPUT "X" KEY ( KEYBOARD ) =  OUTPUT LETTER "SCHWA" ( SCREEN )
+			textsyllable = textsyllable.replace(/ax/g,"ae").replace(/áx/g,"áé").replace(/äx/g,"äë"); // INPUT "Q" KEY ( KEYBOARD ) =  OUTPUT LETTER "AE" ( SCREEN )
+			textsyllable = textsyllable.replace(/aq/g,"aa").replace(/eq/g,"ee").replace(/iq/g,"ii").replace(/oq/g,"oo").replace(/uq/g,"uu");
+			textsyllable = textsyllable.replace(/áq/g,"áá").replace(/éq/g,"éé").replace(/íq/g,"íí").replace(/óq/g,"óó").replace(/úq/g,"úú");
+			textsyllable = textsyllable.replace(/äq/g,"ää").replace(/ëq/g,"ëë").replace(/ïq/g,"ïï").replace(/öq/g,"öö").replace(/üq/g,"üü");
+			textsyllable = textsyllable.replace(/xq/g,"əə");
 			textsyllable = textsyllable.replace(/nh/g,"ng").replace(/NH/g,"NG");
 			textsyllable = textsyllable.replace(/c/g,"ch").replace(/C/g,"CH");
 			textsyllable = textsyllable.replace(/jh/g,"çç").replace(/JH/g,"ÇÇ");
@@ -83,19 +83,5 @@ function Transcribe(text,syllable,stress1,stress2,lowerca,fusion) {
 	result = result.trim();
 	// RESULT ( MAPA )
 	return result;
-};
-// APA DICTIONARY
-const apadict = {
-  "a": "oq",
-  "alphabet": "áqL.Foq.BëhT",
-  "an": "áqN",
-  "do": "Dúx",
-  "drop": "DRáxP",
-  "is": "íhZ",
-  "know": "Nóu",
-  "not": "NáxT",
-  "ocean": "óu.SHoqN",
-  "we": "Wíx",
-  "what": "WáhT"
 };
 module.exports = { Transcribe };
