@@ -11,11 +11,11 @@ let myInputW = 810;
 let myInputH = 240;
 let myArea = 0;
 let myAPA = document.getElementById("myAPA");
-let myBox1 = document.getElementById("myBox1");
-let myBox2 = document.getElementById("myBox2");
-let myBox3 = document.getElementById("myBox3");
-let myBox4 = document.getElementById("myBox4");
-let myBox5 = document.getElementById("myBox5");
+let mySyll = document.getElementById("mySyll");
+let myStr1 = document.getElementById("myStr1");
+let myStr2 = document.getElementById("myStr2");
+let myCase = document.getElementById("myCase");
+let myFusi = document.getElementById("myFusi");
 // TOP BUTTON PANEL
 function myfunMAPA() {
 	if ( myAPA.checked == true ) {
@@ -25,19 +25,7 @@ function myfunMAPA() {
 		myfunMAPA();
 	};
 };
-function myFunction1() {
-	myCookie();
-};
-function myFunction2() {
-	myCookie();
-};
-function myFunction3() {
-	myCookie();
-};
-function myFunction4() {
-	myCookie();
-};
-function myFunction5() {
+function myFunction() {
 	myCookie();
 };
 // LOWER BUTTON PANEL
@@ -45,11 +33,11 @@ function myChange() {
 	let text;
 	text = document.getElementById("myInput").value.toString();
 	if ( myAPA.checked == true ) { v = 1 };
-	if ( myBox1.checked == true ) { y = 1 } else { y = 0 };
-	if ( myBox2.checked == true ) { s = 1 } else { s = 0 };
-	if ( myBox3.checked == true ) { n = 1 } else { n = 0 };
-	if ( myBox4.checked == true ) { l = 1 } else { l = 0 };
-	if ( myBox5.checked == true ) { z = 1 } else { z = 0 };
+	if ( mySyll.checked == true ) { y = 1 } else { y = 0 };
+	if ( myStr1.checked == true ) { s = 1 } else { s = 0 };
+	if ( myStr2.checked == true ) { n = 1 } else { n = 0 };
+	if ( myCase.checked == true ) { l = 1 } else { l = 0 };
+	if ( myFusi.checked == true ) { z = 1 } else { z = 0 };
 	text = Transcribe(text,y,s,n,l,z);
 	document.getElementById("myResult").value = text;
 	document.getElementById("myInput").scrollTop = 0;
@@ -192,11 +180,11 @@ function myTextarea() {
 // COOKIES
 function myCookie() {
 	if ( myAPA.checked == true ) { v = 1 };
-	if ( myBox1.checked == true ) { y = 1 } else { y = 0 };
-	if ( myBox2.checked == true ) { s = 1 } else { s = 0 };
-	if ( myBox3.checked == true ) { n = 1 } else { n = 0 };
-	if ( myBox4.checked == true ) { l = 1 } else { l = 0 };
-	if ( myBox5.checked == true ) { z = 1 } else { z = 0 };
+	if ( mySyll.checked == true ) { y = 1 } else { y = 0 };
+	if ( myStr1.checked == true ) { s = 1 } else { s = 0 };
+	if ( myStr2.checked == true ) { n = 1 } else { n = 0 };
+	if ( myCase.checked == true ) { l = 1 } else { l = 0 };
+	if ( myFusi.checked == true ) { z = 1 } else { z = 0 };
 	document.cookie = "phonemic=" + v + "," + y + "," + s + "," + n + "," + l + "," + z + "," + t + "," + myInputW + "," + myInputH + "," + myArea + ",~" + "; max-age=31415926 ; path=/";
 };
 // SETTING
@@ -206,16 +194,16 @@ function mySetting() {
 		let settingValue = settingDecode.replace(/^.*(phonemic=)(.*)(,~).*/,"$2");
 		let settingLista = settingValue.trim().split(",");
 		if ( settingLista[0] == 1 ) { document.getElementById("myAPA").checked = true ; myfunMAPA(); };
-		if ( settingLista[1] == 1 ) { document.getElementById("myBox1").checked = true ; myFunction1(); };
-		if ( settingLista[1] == 0 ) { document.getElementById("myBox1").checked = false ; myFunction1(); };
-		if ( settingLista[2] == 1 ) { document.getElementById("myBox2").checked = true ; myFunction2(); };
-		if ( settingLista[2] == 0 ) { document.getElementById("myBox2").checked = false ; myFunction2(); };
-		if ( settingLista[3] == 1 ) { document.getElementById("myBox3").checked = true ; myFunction3(); };
-		if ( settingLista[3] == 0 ) { document.getElementById("myBox3").checked = false ; myFunction3(); };
-		if ( settingLista[4] == 1 ) { document.getElementById("myBox4").checked = true ; myFunction4(); };
-		if ( settingLista[4] == 0 ) { document.getElementById("myBox4").checked = false ; myFunction4(); };
-		if ( settingLista[5] == 1 ) { document.getElementById("myBox5").checked = true ; myFunction5(); };
-		if ( settingLista[5] == 0 ) { document.getElementById("myBox5").checked = false ; myFunction5(); };
+		if ( settingLista[1] == 1 ) { document.getElementById("mySyll").checked = true ; myFunction(); };
+		if ( settingLista[1] == 0 ) { document.getElementById("mySyll").checked = false ; myFunction(); };
+		if ( settingLista[2] == 1 ) { document.getElementById("myStr1").checked = true ; myFunction(); };
+		if ( settingLista[2] == 0 ) { document.getElementById("myStr1").checked = false ; myFunction(); };
+		if ( settingLista[3] == 1 ) { document.getElementById("myStr2").checked = true ; myFunction(); };
+		if ( settingLista[3] == 0 ) { document.getElementById("myStr2").checked = false ; myFunction(); };
+		if ( settingLista[4] == 1 ) { document.getElementById("myCase").checked = true ; myFunction(); };
+		if ( settingLista[4] == 0 ) { document.getElementById("myCase").checked = false ; myFunction(); };
+		if ( settingLista[5] == 1 ) { document.getElementById("myFusi").checked = true ; myFunction(); };
+		if ( settingLista[5] == 0 ) { document.getElementById("myFusi").checked = false ; myFunction(); };
 		if ( settingLista[6] == 1 || settingLista[6] == 2 ) { themeValue = settingLista[6] ; myTheme(); };
 		if ( settingLista[7] !== undefined ) { myInputW = settingLista[7]; };
 		if ( settingLista[8] !== undefined ) { myInputH = settingLista[8]; };

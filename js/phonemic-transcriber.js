@@ -39,28 +39,30 @@ function Transcribe(text,syllable,stress1,stress2,lowerca,fusion) {
 		};
 		// WORD THAT IS IN THE DICTIONARY
 		if ( apadict[word] ) {
-			let textsyllable;
-			if ( syllable == 1 ) { textsyllable = apadict[word] ; };
-			if ( syllable == 0 ) { textsyllable = apadict[word].replace(/\./g,"") ; };
+			let textsyllable = apadict[word];
+			// MODIFIED AMERICAN PHONETIC ALPHABET ( MAPA )
+			textsyllable = textsyllable.replace(/ox\~/g,"ər");
+			textsyllable = textsyllable.replace(/éq\~/g,"éér").replace(/ëq\~/g,"ëër");
+			textsyllable = textsyllable.replace(/ah/g,"a").replace(/eh/g,"e").replace(/ih/g,"i").replace(/uh/g,"u");
+			textsyllable = textsyllable.replace(/áh/g,"á").replace(/éh/g,"é").replace(/íh/g,"í").replace(/úh/g,"ú");
+			textsyllable = textsyllable.replace(/äh/g,"ä").replace(/ëh/g,"ë").replace(/ïh/g,"ï").replace(/üh/g,"ü");
+			textsyllable = textsyllable.replace(/ox/g,"ə"); // INPUT "X" KEY ( KEYBOARD ) = OUTPUT LETTER "SCHWA" ( SCREEN )
+			textsyllable = textsyllable.replace(/ax/g,"ae"); // INPUT "Q" KEY ( KEYBOARD ) = OUTPUT LETTER "ASH" ( SCREEN )
+			textsyllable = textsyllable.replace(/áx/g,"áé").replace(/äx/g,"äë");
+			textsyllable = textsyllable.replace(/aq/g,"aa").replace(/iq/g,"ii").replace(/oq/g,"oo").replace(/uq/g,"uu");
+			textsyllable = textsyllable.replace(/áq/g,"áá").replace(/íq/g,"íí").replace(/óq/g,"óó").replace(/úq/g,"úú");
+			textsyllable = textsyllable.replace(/äq/g,"ää").replace(/ïq/g,"ïï").replace(/öq/g,"öö").replace(/üq/g,"üü");
+			textsyllable = textsyllable.replace(/NH/g,"NG");
+			textsyllable = textsyllable.replace(/C/g,"CH");
+			textsyllable = textsyllable.replace(/JH/g,"ÇÇ");
+			textsyllable = textsyllable.replace(/J/g,"H");
+			textsyllable = textsyllable.replace(/ÇÇ/g,"J");
+			// SYLLABLE
+			if ( syllable == 0 ) { textsyllable = textsyllable.replace(/\./g,"") ; };
 			// LOWERCASE, STRESS 1 & STRESS 2
 			if ( lowerca == 0 ) { textsyllable = textsyllable.toLowerCase() ; };
 			if ( stress1 == 0 ) { textsyllable = textsyllable.replace(/á/g,"a").replace(/é/g,"e").replace(/í/g,"i").replace(/ó/g,"o").replace(/ú/g,"u") ; };
 			if ( stress2 == 0 ) { textsyllable = textsyllable.replace(/ä/g,"a").replace(/ë/g,"e").replace(/ï/g,"i").replace(/ö/g,"o").replace(/ü/g,"u") ; };
-			// MODIFIED AMERICAN PHONETIC ALPHABET ( MAPA )
-			textsyllable = textsyllable.replace(/ah/g,"a").replace(/eh/g,"e").replace(/ih/g,"i").replace(/uh/g,"u");
-			textsyllable = textsyllable.replace(/áh/g,"á").replace(/éh/g,"é").replace(/íh/g,"í").replace(/úh/g,"ú");
-			textsyllable = textsyllable.replace(/äh/g,"ä").replace(/ëh/g,"ë").replace(/ïh/g,"ï").replace(/üh/g,"ü");
-			textsyllable = textsyllable.replace(/ox/g,"ə"); // INPUT "X" KEY ( KEYBOARD ) =  OUTPUT LETTER "SCHWA" ( SCREEN )
-			textsyllable = textsyllable.replace(/ax/g,"ae").replace(/áx/g,"áé").replace(/äx/g,"äë"); // INPUT "Q" KEY ( KEYBOARD ) =  OUTPUT LETTER "AE" ( SCREEN )
-			textsyllable = textsyllable.replace(/aq/g,"aa").replace(/eq/g,"ee").replace(/iq/g,"ii").replace(/oq/g,"oo").replace(/uq/g,"uu");
-			textsyllable = textsyllable.replace(/áq/g,"áá").replace(/éq/g,"éé").replace(/íq/g,"íí").replace(/óq/g,"óó").replace(/úq/g,"úú");
-			textsyllable = textsyllable.replace(/äq/g,"ää").replace(/ëq/g,"ëë").replace(/ïq/g,"ïï").replace(/öq/g,"öö").replace(/üq/g,"üü");
-			textsyllable = textsyllable.replace(/xq/g,"əə");
-			textsyllable = textsyllable.replace(/nh/g,"ng").replace(/NH/g,"NG");
-			textsyllable = textsyllable.replace(/c/g,"ch").replace(/C/g,"CH");
-			textsyllable = textsyllable.replace(/jh/g,"çç").replace(/JH/g,"ÇÇ");
-			textsyllable = textsyllable.replace(/j/g,"h").replace(/J/g,"H");
-			textsyllable = textsyllable.replace(/çç/g,"j").replace(/ÇÇ/g,"J");
 			// FUSION
 			if ( fusion == 0 ) { result = result + textsyllable + "  "; };
 			if ( fusion == 1 ) { result = result + word + " { " + textsyllable + " }" + "  "; };

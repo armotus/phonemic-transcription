@@ -1,6 +1,6 @@
 {
   "name": "phonemic-transcriber",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple phonemic transcriber for the american english language.",
   "main": "js/phonemic-transcriber.js",
   "directories": {
