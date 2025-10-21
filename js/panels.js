@@ -6,39 +6,218 @@ let n = 0;
 let l = 0;
 let t = 0;
 let z = 0;
+let a = 0;
+let b = 0;
+let c = 0;
+let d = 0;
 let themeValue = 2;
 let myInputW = 810;
 let myInputH = 240;
 let myArea = 0;
-let myAPA = document.getElementById("myAPA");
+let myMAPA = document.getElementById("myMAPA");
+let mySAPA = document.getElementById("mySAPA");
 let mySyll = document.getElementById("mySyll");
 let myStr1 = document.getElementById("myStr1");
 let myStr2 = document.getElementById("myStr2");
 let myCase = document.getElementById("myCase");
 let myFusi = document.getElementById("myFusi");
+let myST1a = document.getElementById("myST1a");
+let myST1b = document.getElementById("myST1b");
+let myST2a = document.getElementById("myST2a");
+let myST2b = document.getElementById("myST2b");
 // TOP BUTTON PANEL
 function myfunMAPA() {
-	if ( myAPA.checked == true ) {
+	if ( myMAPA.checked == true ) {
+		document.getElementById("mySAPA").checked = false;
+		document.getElementById("myST1b").style.display = "none";
+		document.getElementById("myST1a").style.display = "inline";
+		document.getElementById("myST2b").style.display = "none";
+		document.getElementById("myST2a").style.display = "inline";
 		myCookie();
+		if ( a == 0 ) {
+			let i = 0;
+			while ( i < 3 ) {
+				document.getElementsByClassName("phas")[i].style.display = "none";
+				document.getElementsByClassName("pham")[i].style.display = "block";
+				i = i + 1;
+			};
+		};
 	} else {
-		document.getElementById("myAPA").checked = true;
+		document.getElementById("myMAPA").checked = true;
 		myfunMAPA();
 	};
 };
+function myfunSAPA() {
+	if ( mySAPA.checked == true ) {
+		document.getElementById("myMAPA").checked = false;
+		document.getElementById("myST1a").style.display = "none";
+		document.getElementById("myST1b").style.display = "inline";
+		document.getElementById("myST2a").style.display = "none";
+		document.getElementById("myST2b").style.display = "inline";
+		myCookie();
+		if ( a == 0 ) {
+			let i = 0;
+			while ( i < 3 ) {
+				document.getElementsByClassName("pham")[i].style.display = "none";
+				document.getElementsByClassName("phas")[i].style.display = "block";
+				i = i + 1;
+			};
+		};
+	} else {
+		document.getElementById("mySAPA").checked = true;
+		myfunSAPA();
+	};
+};
 function myFunction() {
+	myCookie();
+};
+function myPho() {
+	if ( a == 0 ) {
+		let i = 0;
+		while ( i < 23 ) {
+			document.getElementsByClassName("phop")[i].style.display = "block";
+			i = i + 1;
+		};
+		i = 0;
+		while ( i < 10 ) {
+			document.getElementsByClassName("phos")[i].style.display = "inline";
+			i = i + 1;
+		};
+		i = 0;
+		while ( i < 6 ) {
+			document.getElementsByClassName("phoz")[i].style.display = "none";
+			i = i + 1;
+		};
+		a = 1;
+	} else {
+		let i = 0;
+		while ( i < 23 ) {
+			document.getElementsByClassName("phop")[i].style.display = "none";
+			i = i + 1;
+		};
+		i = 0;
+		while ( i < 10 ) {
+			document.getElementsByClassName("phos")[i].style.display = "none";
+			i = i + 1;
+		};
+		i = 0;
+		while ( i < 6 ) {
+			document.getElementsByClassName("phoz")[i].style.display = "inline";
+			i = i + 1;
+		};
+		a = 0;
+	};
+	if ( a == 1 ) {
+		let i = 0;
+		while ( i < 3 ) {
+			document.getElementsByClassName("phas")[i].style.display = "block";
+			document.getElementsByClassName("pham")[i].style.display = "block";
+			i = i + 1;
+		};
+	};
+	if ( a == 0 && myMAPA.checked == true ) {
+		let i = 0;
+		while ( i < 3 ) {
+			document.getElementsByClassName("phas")[i].style.display = "none";
+			document.getElementsByClassName("pham")[i].style.display = "block";
+			i = i + 1;
+		};
+	};
+	if ( a == 0 && mySAPA.checked == true ) {
+		let i = 0;
+		while ( i < 3 ) {
+			document.getElementsByClassName("pham")[i].style.display = "none";
+			document.getElementsByClassName("phas")[i].style.display = "block";
+			i = i + 1;
+		};
+	};
+};
+function myPhi() {
+	if ( b == 0 ) {
+		let i = 0;
+		while ( i < 1 ) {
+			document.getElementsByClassName("phip")[i].style.display = "block";
+			i = i + 1;
+		};
+		i = 0;
+		while ( i < 2 ) {
+			document.getElementsByClassName("phis")[i].style.display = "inline";
+			i = i + 1;
+		};
+		b = 1;
+	} else {
+		let i = 0;
+		while ( i < 1 ) {
+			document.getElementsByClassName("phip")[i].style.display = "none";
+			i = i + 1;
+		};
+		i = 0;
+		while ( i < 2 ) {
+			document.getElementsByClassName("phis")[i].style.display = "none";
+			i = i + 1;
+		};
+		b = 0;
+	};
+};
+function myBib() {
+	if ( c == 0 ) {
+		let i = 0;
+		while ( i < 4 ) {
+			document.getElementsByClassName("bibp")[i].style.display = "block";
+			i = i + 1;
+		};
+		i = 0;
+		while ( i < 2 ) {
+			document.getElementsByClassName("bibs")[i].style.display = "inline";
+			i = i + 1;
+		};
+		c = 1;
+	} else {
+		let i = 0;
+		while ( i < 4 ) {
+			document.getElementsByClassName("bibp")[i].style.display = "none";
+			i = i + 1;
+		};
+		i = 0;
+		while ( i < 2 ) {
+			document.getElementsByClassName("bibs")[i].style.display = "none";
+			i = i + 1;
+		};
+		c = 0;
+	};
+};
+function myPro() {
+	if ( d == 0 ) {
+		a = 0;
+		b = 0;
+		c = 0;
+		myPho();
+		myPhi();
+		myBib();
+		d = 1;
+	} else {
+		a = 1;
+		b = 1;
+		c = 1;
+		myPho();
+		myPhi();
+		myBib();
+		d = 0;
+	};
 	myCookie();
 };
 // LOWER BUTTON PANEL
 function myChange() {
 	let text;
 	text = document.getElementById("myInput").value.toString();
-	if ( myAPA.checked == true ) { v = 1 };
+	if ( myMAPA.checked == true ) { v = 1 };
+	if ( mySAPA.checked == true ) { v = 2 };
 	if ( mySyll.checked == true ) { y = 1 } else { y = 0 };
 	if ( myStr1.checked == true ) { s = 1 } else { s = 0 };
 	if ( myStr2.checked == true ) { n = 1 } else { n = 0 };
 	if ( myCase.checked == true ) { l = 1 } else { l = 0 };
 	if ( myFusi.checked == true ) { z = 1 } else { z = 0 };
-	text = Transcribe(text,y,s,n,l,z);
+	text = Transcribe(text,v,y,s,n,l,z);
 	document.getElementById("myResult").value = text;
 	document.getElementById("myInput").scrollTop = 0;
 	document.getElementById("myResult").scrollTop = 0;
@@ -117,7 +296,7 @@ function myTheme() {
 			u = u + 1;
 		};
 		let a = 0;
-		while ( a < 18 ) {
+		while ( a < 23 ) {
 			document.getElementsByTagName("a")[a].style.color = "#c63636";
 			document.getElementsByTagName("a")[a].style.backgroundColor = "#303030";
 			a = a + 1;
@@ -144,7 +323,7 @@ function myTheme() {
 			u = u + 1;
 		};
 		let a = 0;
-		while ( a < 18 ) {
+		while ( a < 23 ) {
 			document.getElementsByTagName("a")[a].style.color = "#0000ff";
 			document.getElementsByTagName("a")[a].style.backgroundColor = "#ffffff";
 			a = a + 1;
@@ -179,13 +358,14 @@ function myTextarea() {
 };
 // COOKIES
 function myCookie() {
-	if ( myAPA.checked == true ) { v = 1 };
+	if ( myMAPA.checked == true ) { v = 1 };
+	if ( mySAPA.checked == true ) { v = 2 };
 	if ( mySyll.checked == true ) { y = 1 } else { y = 0 };
 	if ( myStr1.checked == true ) { s = 1 } else { s = 0 };
 	if ( myStr2.checked == true ) { n = 1 } else { n = 0 };
 	if ( myCase.checked == true ) { l = 1 } else { l = 0 };
 	if ( myFusi.checked == true ) { z = 1 } else { z = 0 };
-	document.cookie = "phonemic=" + v + "," + y + "," + s + "," + n + "," + l + "," + z + "," + t + "," + myInputW + "," + myInputH + "," + myArea + ",~" + "; max-age=31415926 ; path=/";
+	document.cookie = "phonemic=" + v + "," + y + "," + s + "," + n + "," + l + "," + z + "," + t + "," + myInputW + "," + myInputH + "," + myArea + "," + d + ",~" + "; max-age=31415926 ; path=/";
 };
 // SETTING
 function mySetting() {
@@ -193,7 +373,8 @@ function mySetting() {
 		let settingDecode = decodeURIComponent(document.cookie);
 		let settingValue = settingDecode.replace(/^.*(phonemic=)(.*)(,~).*/,"$2");
 		let settingLista = settingValue.trim().split(",");
-		if ( settingLista[0] == 1 ) { document.getElementById("myAPA").checked = true ; myfunMAPA(); };
+		if ( settingLista[0] == 1 ) { document.getElementById("myMAPA").checked = true ; myfunMAPA(); };
+		if ( settingLista[0] == 2 ) { document.getElementById("mySAPA").checked = true ; myfunSAPA(); };
 		if ( settingLista[1] == 1 ) { document.getElementById("mySyll").checked = true ; myFunction(); };
 		if ( settingLista[1] == 0 ) { document.getElementById("mySyll").checked = false ; myFunction(); };
 		if ( settingLista[2] == 1 ) { document.getElementById("myStr1").checked = true ; myFunction(); };
@@ -208,6 +389,8 @@ function mySetting() {
 		if ( settingLista[7] !== undefined ) { myInputW = settingLista[7]; };
 		if ( settingLista[8] !== undefined ) { myInputH = settingLista[8]; };
 		if ( settingLista[9] !== undefined ) { myArea = settingLista[9]; };
+		if ( settingLista[10] == 0 ) { d = 1 ; myPro(); };
+		if ( settingLista[10] == 1 ) { d = 0 ; myPro(); };
 		myTextarea();
 	};
 };
@@ -241,7 +424,7 @@ function myResponsive() {
 	if ( widthMain >= 174 ) { document.getElementById("Title").innerHTML = "PHONEMIC TRANSCRIPTION"; };
 	document.getElementsByTagName("h1")[0].style.fontSize = valueHfs * widthH1 + "px" ;
 	let i = 0;
-	while ( i < 5 ) {
+	while ( i < 6 ) {
 		document.getElementsByTagName("h2")[i].style.fontSize = valueHfs * 0.70 + "px" ;
 		i = i + 1;
 	};

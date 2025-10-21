@@ -215,61 +215,7 @@ cmudict.close();
 
 # FINAL RESULT : dictionary.js ( apadict-0.0.2 )
 
-# APPENDIX I ( PHONEMES )
-
-"""
-
-A0 • Carnegie Mellon University ( CMU )
-
-|  AH , EH , IH , UH , AE , AH0 , ER0  |  AA , ER , IY , AO , UW  |  AY , EY , OY , AW , OW  |  Stress : 0 , 1 , 2  |
-
-|  B , CH , D , F , G , HH , K , L , M , N , P , R , S , T , V , W , Y , Z  |  DH , JH , NG , SH , TH , ZH  |
-
-A1 • American Phonetic Alphabet ( APA )
-
-|  ah , eh , ih , uh , ax , ox , xq  |  aq , eq , iq , oq , uq  |  ai , ei , oi , au , ou  |  Stress : a , á , ä  |
-
-|  b , c , d , f , g , j , k , l , m , n , p , r , s , t , v , w , y , z  |  dh , jh , nh , sh , th , zh  |
-
-A2 • Modified American Phonetic Alphabet ( MAPA )
-
-|  a , e , i , u , ae , ə , əə  |  aa , ee , ii , oo , uu  |  ai , ei , oi , au , ou  |  Stress : a , á , ä  |
-
-|  b , ch , d , f , g , h , k , l , m , n , p , r , s , t , v , w , y , z  |  dh , j , ng , sh , th , zh  |
-
-A3 • International Phonetic Alphabet ( IPA )
-
-|  ʌ , ɛ , ɪ , ʊ , æ , ə , ɚ  |  ɑː , ɝː , iː , ɔː , uː  |  aɪ , eɪ , ɔɪ , aʊ , oʊ  |  Stress : . , ˈ , ˌ  |
-
-|  b , t͡ʃ , d , f , g , h , k , l , m , n , p , r , s , t , v , w , j , z  |  ð , d͡ʒ , ŋ , ʃ , θ , ʒ  |
-
-E1 • English Phonetic Alphabet ( EPA )
-
-|  ah , eh , ih , oh , uh , ax , ox  |  aq , eq , iq , oq , uq  |  ex , ix , ux , ai , ei , oi , au , ou  |
-
-|  a:i:x , a:u:x  |  e:i:x , o:i:x , o:u:x  |  Stress : a , á , ä  |
-
-|  b , c , d , f , g , j , k , l , m , n , p , r , s , t , v , w , y , z  |  dh , jh , nh , sh , th , zh  |
-
-E2 • Modified English Phonetic Alphabet ( MEPA )
-
-|  a , e , i , o , u , ae , ə  |  aa , ee , ii , oo , uu  |  eə , iə , uə , ai , ei , oi , au , əu  |
-
-|  aiə , auə  |  ei.ə , oi.ə , əu.ə  |  Stress : a , á , ä  |  Note : əú = ə´u , əü = ə¨u  |
-
-|  b , ch , d , f , g , h , k , l , m , n , p , r , s , t , v , w , y , z  |  dh , j , ng , sh , th , zh  |
-
-E3 • International Phonetic Alphabet ( IPA )
-
-|  ʌ , e , ɪ , ɒ , ʊ , æ , ə  |  ɑː , ɜː , iː , ɔː , uː  |  eə , ɪə , ʊə , aɪ , eɪ , ɔɪ , aʊ , əʊ  |
-
-|  aɪə , aʊə  |  eɪ.ə , ɔɪ.ə , əʊ.ə  |  Stress : . , ˈ , ˌ  |
-
-|  b , t͡ʃ , d , f , g , h , k , l , m , n , p , r , s , t , v , w , j , z  |  ð , d͡ʒ , ŋ , ʃ , θ , ʒ  |
-
-"""
-
-# APPENDIX II ( TEST )
+# APPENDIX ( TEST )
 
 """
 
