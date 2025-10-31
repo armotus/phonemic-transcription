@@ -32,7 +32,7 @@ A3 &#8226; Simplified American Phonetic Alphabet (&nbsp;<a href="https://github.
 
 |&nbsp; a&nbsp;, e&nbsp;, i&nbsp;, u&nbsp;, &#230;&nbsp;, &#601;&nbsp;, &#601;r&nbsp;&nbsp;|&nbsp; &#257;&nbsp;, &#275;r&nbsp;, &#299;&nbsp;, &#333;&nbsp;, &#363;&nbsp;&nbsp;|&nbsp; ai&nbsp;, ei&nbsp;, oi&nbsp;, au&nbsp;, ou&nbsp;&nbsp;|&nbsp; Stress&nbsp;: &sup1;&nbsp;, &sup3;&nbsp;, &sup2;&nbsp;&nbsp;|
 
-|&nbsp; b&nbsp;, ch&nbsp;, d&nbsp;, f&nbsp;, g&nbsp;, h&nbsp;, k&nbsp;, l&nbsp;, m&nbsp;, n&nbsp;, p&nbsp;, r&nbsp;, s&nbsp;, t&nbsp;, v&nbsp;, w&nbsp;, y&nbsp;, z&nbsp;&nbsp;|&nbsp; dh&nbsp;, j&nbsp;, &#331;&nbsp;, sh&nbsp;, th&nbsp;, zh&nbsp;&nbsp;|
+|&nbsp; b&nbsp;, ch&nbsp;, d&nbsp;, f&nbsp;, g&nbsp;, h&nbsp;, k&nbsp;, l&nbsp;, m&nbsp;, n&nbsp;, p&nbsp;, r&nbsp;, s&nbsp;, t&nbsp;, v&nbsp;, w&nbsp;, y&nbsp;, z&nbsp;&nbsp;|&nbsp; dh&nbsp;, j&nbsp;, &#331;&nbsp;, sh&nbsp;, th&nbsp;, &#351;&nbsp;&nbsp;|
 
 A4 &#8226; International Phonetic Alphabet (&nbsp;<a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet">IPA</a>&nbsp;)
 
@@ -64,7 +64,7 @@ B3 &#8226; Simplified English Phonetic Alphabet (&nbsp;<a href="https://github.c
 
 |&nbsp; ai&#601;&nbsp;, au&#601;&nbsp;&nbsp;|&nbsp; ei.&#601;&nbsp;, oi.&#601;&nbsp;, &#601;u.&#601;&nbsp;&nbsp;|&nbsp; Stress&nbsp;: &sup1;&nbsp;, &sup3;&nbsp;, &sup2;&nbsp;&nbsp;|
 
-|&nbsp; b&nbsp;, ch&nbsp;, d&nbsp;, f&nbsp;, g&nbsp;, h&nbsp;, k&nbsp;, l&nbsp;, m&nbsp;, n&nbsp;, p&nbsp;, r&nbsp;, s&nbsp;, t&nbsp;, v&nbsp;, w&nbsp;, y&nbsp;, z&nbsp;&nbsp;|&nbsp; dh&nbsp;, j&nbsp;, &#331;&nbsp;, sh&nbsp;, th&nbsp;, zh&nbsp;&nbsp;|
+|&nbsp; b&nbsp;, ch&nbsp;, d&nbsp;, f&nbsp;, g&nbsp;, h&nbsp;, k&nbsp;, l&nbsp;, m&nbsp;, n&nbsp;, p&nbsp;, r&nbsp;, s&nbsp;, t&nbsp;, v&nbsp;, w&nbsp;, y&nbsp;, z&nbsp;&nbsp;|&nbsp; dh&nbsp;, j&nbsp;, &#331;&nbsp;, sh&nbsp;, th&nbsp;, &#351;&nbsp;&nbsp;|
 
 B4 &#8226; International Phonetic Alphabet (&nbsp;<a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet">IPA</a>&nbsp;)
 
@@ -92,7 +92,13 @@ B4 &#8226; International Phonetic Alphabet (&nbsp;<a href="https://en.wikipedia.
 
 &#8226; GEMINI : Google's AI Assistant (&nbsp;<a href="https://en.wikipedia.org/wiki/Gemini_(chatbot)">Link</a>&nbsp;)
 
+&#8226; MOP : Maximal Onset Principle (&nbsp;<a href="https://en.wikipedia.org/wiki/English_phonology">Link</a>&nbsp;)
+
+&#8226; WSP : Weak Syllable Principle (&nbsp;<a href="https://en.wikipedia.org/wiki/Syllable">Link</a>&nbsp;)
+
 &#8226; URL : Phonemic Orthography (&nbsp;<a href="https://en.wikipedia.org/wiki/Phonemic_orthography">Link</a>&nbsp;)
+
+&#8226; URL : Cambridge Dictionary (&nbsp;<a href="https://dictionary.cambridge.org/us/dictionary/english/american">Link</a>&nbsp;)
 
 &#8226; URL : Alphabetic Principle (&nbsp;<a href="https://en.wikipedia.org/wiki/Alphabetic_principle">Link</a>&nbsp;)
 
@@ -107,8 +113,8 @@ npm i phonemic-transcriber
 ```js
 let text = 'What we know is a drop, what we do not know is an ocean';
 let transcriber = require('phonemic-transcriber');
-let MAPAphonemetext = transcriber.Transcribe(text,1,1,0,0,0,0);
-let SAPAphonemetext = transcriber.Transcribe(text,2,1,0,0,0,0);
+let MAPAphonemetext = transcriber.Transcribe(text,1,1,0,0,0,0,0);
+let SAPAphonemetext = transcriber.Transcribe(text,2,1,0,0,0,0,0);
 
 console.log(MAPAphonemetext);
 console.log(SAPAphonemetext);

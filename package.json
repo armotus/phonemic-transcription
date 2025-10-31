@@ -1,6 +1,6 @@
 {
   "name": "phonemic-transcriber",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A simple phonemic transcriber for the american english language.",
   "main": "js/phonemic-transcriber.js",
   "directories": {
@@ -15,13 +15,9 @@
     "phonological",
     "orthography",
     "transcriber",
-    "transcribe",
     "dictionary",
-    "character",
     "phonology",
     "allophone",
-    "phonetics",
-    "phonemics",
     "phonetic",
     "phonemic",
     "alphabet",
@@ -29,6 +25,10 @@
     "writing",
     "phoneme",
     "cmu",
+    "syllable",
+    "ambisyllabicity",
+    "weak-syllable-principle",
+    "maximal-onset-principle",
     "javascript",
     "html5"
   ],

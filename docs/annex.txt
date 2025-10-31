@@ -1,0 +1,40 @@
+
++ Received Pronunciation ( RP )
+
+- Non-Rhotic ( Pronunciation )
+
+- Linking R ( Hiatus )
+
+- Intrusive R ( Hiatus )
+
+- Ambisyllabicity
+
+- Yod-Dropping
+
+- Yod-Coalescence
+
+- CCCVCCCC
+
+- str.e.ngth
+
+- onset.nucleus.coda
+
++ General American ( GA )
+
+- Rhotic ( Pronunciation )
+
+- Glide Insertion W ( Hiatus )
+
+- Glide Insertion Y ( Hiatus )
+
+- Ambisyllabicity
+
+- Yod-Dropping
+
+- Yod-Coalescence
+
+- CCCVCCCC
+
+- str.e.ngth
+
+- onset.nucleus.coda

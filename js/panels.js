@@ -6,6 +6,8 @@ let n = 0;
 let l = 0;
 let t = 0;
 let z = 0;
+let m = 0;
+let p = 0;
 let a = 0;
 let b = 0;
 let c = 0;
@@ -21,6 +23,8 @@ let myStr1 = document.getElementById("myStr1");
 let myStr2 = document.getElementById("myStr2");
 let myCase = document.getElementById("myCase");
 let myFusi = document.getElementById("myFusi");
+let myMaxi = document.getElementById("myMaxi");
+let myWeak = document.getElementById("myWeak");
 let myST1a = document.getElementById("myST1a");
 let myST1b = document.getElementById("myST1b");
 let myST2a = document.getElementById("myST2a");
@@ -69,6 +73,14 @@ function myfunSAPA() {
 	};
 };
 function myFunction() {
+	myCookie();
+};
+function myFunMaxi() {
+	document.getElementById("myWeak").checked = false;
+	myCookie();
+};
+function myFunWeak() {
+	document.getElementById("myMaxi").checked = false;
 	myCookie();
 };
 function myPho() {
@@ -162,7 +174,7 @@ function myPhi() {
 function myBib() {
 	if ( c == 0 ) {
 		let i = 0;
-		while ( i < 4 ) {
+		while ( i < 7 ) {
 			document.getElementsByClassName("bibp")[i].style.display = "block";
 			i = i + 1;
 		};
@@ -174,7 +186,7 @@ function myBib() {
 		c = 1;
 	} else {
 		let i = 0;
-		while ( i < 4 ) {
+		while ( i < 7 ) {
 			document.getElementsByClassName("bibp")[i].style.display = "none";
 			i = i + 1;
 		};
@@ -206,6 +218,14 @@ function myPro() {
 	};
 	myCookie();
 };
+function myExt() {
+	if ( p == 0 ) {
+		p = 1;
+	} else {
+		p = 0;
+	};
+	myCookie();
+};
 // LOWER BUTTON PANEL
 function myChange() {
 	let text;
@@ -217,7 +237,9 @@ function myChange() {
 	if ( myStr2.checked == true ) { n = 1 } else { n = 0 };
 	if ( myCase.checked == true ) { l = 1 } else { l = 0 };
 	if ( myFusi.checked == true ) { z = 1 } else { z = 0 };
-	text = Transcribe(text,v,y,s,n,l,z);
+	if ( myMaxi.checked == true ) { m = 1 } else { m = 0 };
+	if ( myWeak.checked == true ) { m = 2 };
+	text = Transcribe(text,v,y,s,n,l,z,m);
 	document.getElementById("myResult").value = text;
 	document.getElementById("myInput").scrollTop = 0;
 	document.getElementById("myResult").scrollTop = 0;
@@ -296,7 +318,7 @@ function myTheme() {
 			u = u + 1;
 		};
 		let a = 0;
-		while ( a < 23 ) {
+		while ( a < 26 ) {
 			document.getElementsByTagName("a")[a].style.color = "#c63636";
 			document.getElementsByTagName("a")[a].style.backgroundColor = "#303030";
 			a = a + 1;
@@ -323,7 +345,7 @@ function myTheme() {
 			u = u + 1;
 		};
 		let a = 0;
-		while ( a < 23 ) {
+		while ( a < 26 ) {
 			document.getElementsByTagName("a")[a].style.color = "#0000ff";
 			document.getElementsByTagName("a")[a].style.backgroundColor = "#ffffff";
 			a = a + 1;
@@ -365,7 +387,9 @@ function myCookie() {
 	if ( myStr2.checked == true ) { n = 1 } else { n = 0 };
 	if ( myCase.checked == true ) { l = 1 } else { l = 0 };
 	if ( myFusi.checked == true ) { z = 1 } else { z = 0 };
-	document.cookie = "phonemic=" + v + "," + y + "," + s + "," + n + "," + l + "," + z + "," + t + "," + myInputW + "," + myInputH + "," + myArea + "," + d + ",~" + "; max-age=31415926 ; path=/";
+	if ( myMaxi.checked == true ) { m = 1 } else { m = 0 };
+	if ( myWeak.checked == true ) { m = 2 };
+	document.cookie = "phonemic=" + v + "," + y + "," + s + "," + n + "," + l + "," + z + "," + m + "," + t + "," + d + "," + p + "," + myInputW + "," + myInputH + "," + myArea + ",~" + "; max-age=31415926 ; path=/";
 };
 // SETTING
 function mySetting() {
@@ -385,12 +409,17 @@ function mySetting() {
 		if ( settingLista[4] == 0 ) { document.getElementById("myCase").checked = false ; myFunction(); };
 		if ( settingLista[5] == 1 ) { document.getElementById("myFusi").checked = true ; myFunction(); };
 		if ( settingLista[5] == 0 ) { document.getElementById("myFusi").checked = false ; myFunction(); };
-		if ( settingLista[6] == 1 || settingLista[6] == 2 ) { themeValue = settingLista[6] ; myTheme(); };
-		if ( settingLista[7] !== undefined ) { myInputW = settingLista[7]; };
-		if ( settingLista[8] !== undefined ) { myInputH = settingLista[8]; };
-		if ( settingLista[9] !== undefined ) { myArea = settingLista[9]; };
-		if ( settingLista[10] == 0 ) { d = 1 ; myPro(); };
-		if ( settingLista[10] == 1 ) { d = 0 ; myPro(); };
+		if ( settingLista[6] == 0 ) { document.getElementById("myMaxi").checked = false ; myFunction(); };
+		if ( settingLista[6] == 1 ) { document.getElementById("myMaxi").checked = true ; myFunMaxi(); };
+		if ( settingLista[6] == 2 ) { document.getElementById("myWeak").checked = true ; myFunWeak(); };
+		if ( settingLista[7] == 1 || settingLista[7] == 2 ) { themeValue = settingLista[7] ; myTheme(); };
+		if ( settingLista[8] == 0 ) { d = 1 ; myPro(); };
+		if ( settingLista[8] == 1 ) { d = 0 ; myPro(); };
+		if ( settingLista[9] == 0 ) { p = 1 ; myExt(); };
+		if ( settingLista[9] == 1 ) { p = 0 ; myExt(); };
+		if ( settingLista[10] !== undefined ) { myInputW = settingLista[10]; };
+		if ( settingLista[11] !== undefined ) { myInputH = settingLista[11]; };
+		if ( settingLista[12] !== undefined ) { myArea = settingLista[12]; };
 		myTextarea();
 	};
 };
